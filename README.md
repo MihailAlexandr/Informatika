@@ -1,1 +1,1 @@
-Informatika
+Projects for inf
