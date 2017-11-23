@@ -48,7 +48,6 @@ int main ()
                         G = (- 7 * ((4 * pow (a , 2)) + (15 * a * x) - (4 * pow (x , 2)))) / delitel;
                         mas[i]=G;
                         printf ("G=%.3lf\n" , G);
-
                     }
                 }
 
