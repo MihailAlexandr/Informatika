@@ -1,0 +1,36 @@
+from math import log
+
+formula = int(input("Choose the formula:"))
+min_x = float(input("min x:"))
+max_x = float(input("max x:"))
+a = int(input("enter a:"))
+step = int(input("step:"))
+
+while formula <= 1 | formula < 4:
+
+    if formula == 1:
+        x = min_x
+        while x <= max_x:
+            x += (max_x-min_x)/(step-1)
+            G = (-7*(4*(a**2)+15*a*x-4*(x**2)))/(-45*(a**2)+26*a*x+7*(x**2))
+            print("x=%.3f \tG=%.3f" % (float(x), G))
+        break
+
+    elif formula == 2:
+        x = min_x
+        while x <= max_x:
+            x += (max_x-min_x)/(step-1)
+        F = (2**(40*(a**2)-107*a*x+63*(x**2)))
+        print("x=%.3f \tG=%.3f" % (x, F))
+        break
+
+    elif formula == 3:
+        x = min_x
+        while x <= max_x:
+            x += (max_x-min_x)/(step-1)
+        Y = log(-a**2-2*a*x+3*x**2+1)
+        print("x=%.3f \tG=%.3f" % (x, Y))
+        break
+
+    else:
+        print("XZ that is it")
